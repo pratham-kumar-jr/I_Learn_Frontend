@@ -5,6 +5,7 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import NotFoundPage from "./pages/NotFoundPage";
 import Auth from "./pages/Auth.page";
 import Chatting from "./pages/chatting.page";
+import TeacherDetails from "./pages/TeacherDetails.page";
 
 interface Props {}
 
@@ -23,6 +24,9 @@ const App: FC<Props> = () => {
                               </Route>
                               <Route path={["/chat", "/inbox"]}>
                                    <Chatting />
+                              </Route>
+                              <Route path="/profile">
+                                   <TeacherDetails />
                               </Route>
                               <Route>
                                    <NotFoundPage />
