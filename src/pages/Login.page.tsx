@@ -16,8 +16,6 @@ interface Props {}
 const Login: FC<Props> = () => {
      const [showPassword, setShowPassword] = useState(false);
 
-     const history = useHistory();
-
      const {
           handleSubmit,
           getFieldProps,
